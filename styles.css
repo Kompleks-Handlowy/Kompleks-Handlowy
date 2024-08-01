@@ -1,166 +1,90 @@
-/* Ogólne style */
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background: #f4f4f4;
-    color: #333;
+    background-color: #f4f4f4;
 }
 
 header {
-    background: #004d40;
-    padding: 20px;
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
     text-align: center;
-    color: #fff;
-    position: relative;
 }
 
 .logo-container {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .logo {
-    width: 200px; /* Zmienione w zależności od wymagań */
+    width: 200px;
+}
+
+.date {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-top: 10px;
 }
 
 nav ul {
     list-style: none;
     padding: 0;
-    margin: 0;
-    display: flex;
-    justify-content: center;
 }
 
 nav ul li {
-    margin: 0 15px;
+    display: inline;
+    margin: 0 10px;
 }
 
 nav ul li a {
+    color: white;
     text-decoration: none;
-    color: #fff;
     font-weight: bold;
-    font-size: 1.2em;
 }
 
-.hero-text {
-    text-align: center;
-    padding: 50px 20px;
-}
-
-.hero-text h1 {
-    font-size: 3em;
-    margin: 0;
-}
-
-.hero-text p {
-    font-size: 1.5em;
-}
-
-.current-date {
-    text-align: center;
-    padding: 10px;
-    background: #ffffff;
-    border: 1px solid #ccc;
-    margin: 20px auto;
-    width: 80%;
-    max-width: 800px;
-}
-
-.current-date p {
-    font-size: 1.2em;
-    margin: 0;
-}
-
-.contact-info, .contact-details {
-    text-align: center;
+section {
     padding: 20px;
-    background: #ffffff;
-    border: 1px solid #ccc;
-    margin: 20px auto;
-    width: 80%;
-    max-width: 800px;
-}
-
-.contact-info h2, .contact-details h2 {
-    margin-top: 0;
-}
-
-.offer-item {
-    background-color: #ffffff;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    padding: 20px;
-    margin: 20px auto;
-    width: 80%;
-    max-width: 800px;
     text-align: center;
-}
-
-.offer-item h3 {
-    margin-top: 0;
-}
-
-.offer-item ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.offer-item li {
-    margin: 10px 0;
 }
 
 form {
-    background: #ffffff;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    padding: 20px;
-    margin: 20px auto;
-    width: 80%;
-    max-width: 800px;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 600px;
+    margin: 0 auto;
 }
 
 form label {
-    display: block;
-    margin-top: 10px;
+    margin: 10px 0 5px;
 }
 
-form input, form textarea {
-    width: calc(100% - 22px);
-    margin-top: 5px;
-    padding: 10px;
-    border-radius: 5px;
+form input,
+form textarea {
+    width: 100%;
+    max-width: 400px;
+    padding: 8px;
+    margin-bottom: 10px;
     border: 1px solid #ccc;
+    border-radius: 4px;
 }
 
 form button {
-    margin-top: 10px;
     padding: 10px 20px;
-    background: #004d40;
-    color: #fff;
+    background-color: #333;
+    color: white;
     border: none;
-    border-radius: 5px;
+    border-radius: 4px;
     cursor: pointer;
 }
 
 form button:hover {
-    background: #003d33;
-}
-
-#thank-you-message {
-    text-align: center;
-    padding: 10px;
-    background: #e0f2f1;
-    border: 1px solid #004d40;
-    margin: 20px auto;
-    width: 80%;
-    max-width: 800px;
+    background-color: #555;
 }
 
 footer {
-    background: #004d40;
-    color: #fff;
-    padding: 10px;
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
     text-align: center;
 }
