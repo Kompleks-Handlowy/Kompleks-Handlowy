@@ -78,10 +78,6 @@ h2 {
     justify-content: center;
 }
 
-.rental-item {
-    text-align: center;
-}
-
 .rental-image {
     width: 200px; /* Jednolite rozmiary obrazów */
     height: auto;
