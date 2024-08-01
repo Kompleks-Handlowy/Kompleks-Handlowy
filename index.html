@@ -5,87 +5,87 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kompleks Handlowy Mazurek</title>
     <link rel="stylesheet" href="styles.css">
-    <style>
-        .date {
-            font-size: 1.2em;
-            font-weight: bold;
-            margin-top: 10px;
-        }
-    </style>
 </head>
 <body>
     <header>
         <div class="logo-container">
             <img src="LOGO.png" alt="Logo Kompleks Handlowy Mazurek" class="logo">
         </div>
-        <div class="date" id="date"></div>
         <nav>
             <ul>
-                <li><a href="#contact">Kontakt</a></li>
-                <li><a href="#station">Stacja Paliw</a></li>
-                <li><a href="#offer">Oferta</a></li>
+                <li><a href="#station">STACJA PALIW</a></li>
+                <li><a href="#rental">WYPOŻYCZALNIA SPRZĘTU BUDOWLANEGO</a></li>
+                <li><a href="#services">USŁUGI</a></li>
+                <li><a href="#grain">SKUP ZBOŻA</a></li>
+                <li><a href="#about">O NAS</a></li>
+                <li><a href="#contact">KONTAKT</a></li>
             </ul>
         </nav>
+        <div class="date" id="date"></div>
     </header>
 
-    <section id="contact">
-        <h2>Kontakt</h2>
-        <p><strong>Stacja Paliw Płynnych Jarosław Mazurek</strong></p>
-        <p>NIP: 7140000653</p>
-        <p>Adres: Stary Uścimów 107, 21-109 Uścimów</p>
-        <p>Telefony:</p>
-        <p>Jarosław: 691-700-003</p>
-        <p>Paweł: 691-800-009</p>
+    <main>
+        <section id="station" class="category">
+            <h2>STACJA PALIW</h2>
+            <p>Informacje o stacji paliw, lokalizacji i oferowanych usługach.</p>
+        </section>
 
-        <h3>Formularz Kontaktowy</h3>
-        <form action="https://formspree.io/f/your-form-id" method="POST">
-            <label for="name">Imię:</label>
-            <input type="text" id="name" name="name" required>
-            <label for="phone">Numer telefonu:</label>
-            <input type="tel" id="phone" name="phone" required>
-            <label for="message">Treść wiadomości:</label>
-            <textarea id="message" name="message" rows="6" required></textarea>
-            <button type="submit">Wyślij</button>
-        </form>
+        <section id="rental" class="category">
+            <h2>WYPOŻYCZALNIA SPRZĘTU BUDOWLANEGO</h2>
+            <p>Oferujemy wynajem sprzętu budowlanego, w tym minikoparek, ładowarek teleskopowych i przegubowych.</p>
+        </section>
 
-        <p id="thankyou" style="display:none;">Dziękujemy za zainteresowanie naszą ofertą. Postaramy się skontaktować z Tobą jak najszybciej. Zachęcamy również do kontaktu telefonicznego.</p>
-    </section>
+        <section id="services" class="category">
+            <h2>USŁUGI</h2>
+            <p>Prace ziemne, ogólnobudowlane, transport materiałów budowlanych z rozładunkiem HDS.</p>
+        </section>
 
-    <section id="station">
-        <h2>Stacja Paliw Płynnych</h2>
-        <p><strong>Jarosław Mazurek</strong></p>
-        <p>NIP: 7140000653</p>
-        <p>Adres: Stary Uścimów 107, 21-109 Uścimów</p>
-        <p>Telefony:</p>
-        <p>Jarosław: 691-700-003</p>
-        <p>Paweł: 691-800-009</p>
-    </section>
+        <section id="grain" class="category">
+            <h2>SKUP ZBOŻA</h2>
+            <p>Oferujemy skup zboża w konkurencyjnych cenach.</p>
+        </section>
 
-    <section id="offer">
-        <h2>Oferta</h2>
-        <p>Materiałów budowlanych oraz wynajem sprzętu budowlanego:</p>
-        <ul>
-            <li>Minikoparki</li>
-            <li>Ładowarki teleskopowe</li>
-            <li>Ładowarki przegubowe</li>
-            <li>Prace ziemne</li>
-            <li>Prace ogólnobudowlane</li>
-            <li>Piasek, pospółka, kruszywa</li>
-            <li>Transport materiałów budowlanych z rozładunkiem HDS</li>
-        </ul>
-    </section>
+        <section id="about" class="category">
+            <h2>O NAS</h2>
+            <p>Dowiedz się więcej o naszej firmie, naszej historii i misji.</p>
+        </section>
+
+        <section id="contact">
+            <h2>KONTAKT</h2>
+            <p><strong>Stacja Paliw Płynnych Jarosław Mazurek</strong></p>
+            <p>NIP: 7140000653</p>
+            <p>Adres: Stary Uścimów 107, 21-109 Uścimów</p>
+            <p>Telefony:</p>
+            <p>Jarosław: 691-700-003</p>
+            <p>Paweł: 691-800-009</p>
+
+            <h3>Formularz Kontaktowy</h3>
+            <form action="https://formspree.io/f/your-form-id" method="POST">
+                <label for="name">Imię:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="phone">Numer telefonu:</label>
+                <input type="tel" id="phone" name="phone" required>
+                <label for="message">Treść wiadomości:</label>
+                <textarea id="message" name="message" rows="6" required></textarea>
+                <button type="submit">Wyślij</button>
+            </form>
+            <p id="thankyou" style="display:none;">Dziękujemy za zainteresowanie naszą ofertą. Postaramy się skontaktować z Tobą jak najszybciej. Zachęcamy również do kontaktu telefonicznego.</p>
+        </section>
+    </main>
 
     <footer>
         <p>&copy; 2024 Kompleks Handlowy Mazurek</p>
     </footer>
 
     <script>
+        // Update the date
         document.getElementById('date').innerText = new Date().toLocaleDateString('pl-PL', {
             day: '2-digit',
             month: 'long',
             year: 'numeric'
         });
 
+        // Show thank you message after form submission
         document.querySelector('form').addEventListener('submit', function(event) {
             event.preventDefault(); // Prevent actual form submission
             document.getElementById('thankyou').style.display = 'block';
