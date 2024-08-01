@@ -1,0 +1,141 @@
+/* Ogólne style */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background: #004d40;
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+    position: relative;
+}
+
+.logo-container {
+    margin-bottom: 20px;
+}
+
+.logo {
+    width: 200px; /* Logo */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.hero-text {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.hero-text h1 {
+    font-size: 3em;
+    margin: 0;
+}
+
+.hero-text p {
+    font-size: 1.5em;
+}
+
+.contact-info, .contact-details {
+    text-align: center;
+    padding: 20px;
+    background: #ffffff;
+    border: 1px solid #ccc;
+    margin: 20px auto;
+    width: 80%;
+    max-width: 800px;
+}
+
+.contact-info h2, .contact-details h2 {
+    margin-top: 0;
+}
+
+.offer-item {
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px auto;
+    width: 80%;
+    max-width: 800px;
+    text-align: center;
+}
+
+.offer-item h3 {
+    margin-top: 0;
+}
+
+.offer-item ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.offer-item li {
+    margin: 10px 0;
+}
+
+form {
+    background: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px auto;
+    width: 80%;
+    max-width: 800px;
+    text-align: center;
+}
+
+form label {
+    display: block;
+    margin-top: 10px;
+}
+
+form input, form textarea {
+    width: calc(100% - 22px);
+    margin-top: 5px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+form button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #004d40;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #003d33;
+}
+
+footer {
+    background: #004d40;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
