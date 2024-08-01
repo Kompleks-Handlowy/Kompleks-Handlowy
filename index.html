@@ -5,11 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kompleks Handlowy Mazurek</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
         <div class="logo-container">
-            <img src="LOGO.png" alt="Logo Kompleks Handlowy Mazurek" class="logo">
+            <img src="LOGO.png" alt="Kompleks Handlowy Mazurek Logo" class="logo">
         </div>
         <nav>
             <ul>
@@ -21,75 +24,89 @@
                 <li><a href="#contact">KONTAKT</a></li>
             </ul>
         </nav>
-        <div class="date" id="date"></div>
     </header>
 
-    <main>
-        <section id="station" class="category">
-            <h2>STACJA PALIW</h2>
-            <p>Informacje o stacji paliw, lokalizacji i oferowanych usługach.</p>
-        </section>
+    <section id="station">
+        <h2>STACJA PALIW</h2>
+        <p>Stacje oferują pełną gamę usług od sprzedaży paliwa, przez własny koncept kawiarniano-gastronomiczny Caffe, sklep, aż po myjnie i ofertę kierowaną do klientów biznesowych.</p>
+        <p>Wszystkie stacje działające w ramach sieci spełniają jednolite standardy obsługi i jakości. Gwarancją jakości paliwa na stacjach w barwach jest niezależny program badania paliw.</p>
+        <div class="fuel-animations">
+            <div class="fuel-pump"></div>
+            <div class="fuel-splash"></div>
+        </div>
+    </section>
 
-        <section id="rental" class="category">
-            <h2>WYPOŻYCZALNIA SPRZĘTU BUDOWLANEGO</h2>
-            <p>Oferujemy wynajem sprzętu budowlanego, w tym minikoparek, ładowarek teleskopowych i przegubowych.</p>
-        </section>
+    <section id="rental">
+        <h2>WYPOŻYCZALNIA SPRZĘTU BUDOWLANEGO</h2>
+        <p>Oferujemy wynajem sprzętu budowlanego, w tym minikoparek, ładowarek teleskopowych i przegubowych, oraz prace ziemne i ogólnobudowlane. Zapewniamy transport materiałów budowlanych z rozładunkiem HDS.</p>
+        <div class="rental-gallery">
+            <div class="rental-item">
+                <img src="wideman.png" alt="Wideman" class="rental-image">
+                <p>Wideman</p>
+            </div>
+            <div class="rental-item">
+                <img src="kubota.png" alt="Kubota" class="rental-image">
+                <p>Kubota</p>
+            </div>
+            <div class="rental-item">
+                <img src="iveco.png" alt="Iveco" class="rental-image">
+                <p>Iveco</p>
+            </div>
+            <div class="rental-item">
+                <img src="manitou.png" alt="Manitou" class="rental-image">
+                <p>Manitou</p>
+            </div>
+        </div>
+    </section>
 
-        <section id="services" class="category">
-            <h2>USŁUGI</h2>
-            <p>Prace ziemne, ogólnobudowlane, transport materiałów budowlanych z rozładunkiem HDS.</p>
-        </section>
+    <section id="services">
+        <h2>USŁUGI</h2>
+        <p>Oferujemy usługi związane z pracami ziemnymi, budowlanymi oraz transportem materiałów budowlanych.</p>
+    </section>
 
-        <section id="grain" class="category">
-            <h2>SKUP ZBOŻA</h2>
-            <p>Oferujemy skup zboża w konkurencyjnych cenach.</p>
-        </section>
+    <section id="grain">
+        <h2>SKUP ZBOŻA</h2>
+        <p>Skupujemy zboża na korzystnych warunkach. Skontaktuj się z nami, aby uzyskać więcej informacji na temat oferty skupu.</p>
+        <div class="map-container">
+            <iframe src="https://www.google.com/maps/embed/v1/place?q=Zienki%2015%2C%2021-230&key=YOUR_API_KEY" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </section>
 
-        <section id="about" class="category">
-            <h2>O NAS</h2>
-            <p>Dowiedz się więcej o naszej firmie, naszej historii i misji.</p>
-        </section>
+    <section id="about">
+        <h2>O NAS</h2>
+        <p>Kompleks Handlowy Mazurek to firma z wieloletnim doświadczeniem w branży. Oferujemy szeroki zakres usług, od stacji paliw po wynajem sprzętu budowlanego. Nasze usługi są dostosowane do potrzeb klientów, zapewniając najwyższą jakość obsługi.</p>
+    </section>
 
-        <section id="contact">
-            <h2>KONTAKT</h2>
+    <section id="contact">
+        <h2>KONTAKT</h2>
+        <div class="contact-info">
             <p><strong>Stacja Paliw Płynnych Jarosław Mazurek</strong></p>
-            <p>NIP: 7140000653</p>
-            <p>Adres: Stary Uścimów 107, 21-109 Uścimów</p>
-            <p>Telefony:</p>
-            <p>Jarosław: 691-700-003</p>
-            <p>Paweł: 691-800-009</p>
-
-            <h3>Formularz Kontaktowy</h3>
-            <form action="https://formspree.io/f/your-form-id" method="POST">
+            <p>WĘDROWNA 12/6, 20-819 LUBLIN</p>
+            <p><strong>NIP:</strong> 7140000653</p>
+            <p><strong>REGON:</strong> 061477594</p>
+            <p><strong>Telefony:</strong> Jarosław: +48 691-700-003, Paweł: +48 691-800-009</p>
+        </div>
+        <div class="map-container">
+            <iframe src="https://www.google.com/maps/embed/v1/place?q=Stary%20U%C5%9Bcim%C3%B3w%20107%2C%2021-109%20U%C5%9Bcim%C3%B3w&key=YOUR_API_KEY" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+        <div class="form-container">
+            <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
                 <label for="name">Imię:</label>
                 <input type="text" id="name" name="name" required>
+
                 <label for="phone">Numer telefonu:</label>
                 <input type="tel" id="phone" name="phone" required>
+
                 <label for="message">Treść wiadomości:</label>
                 <textarea id="message" name="message" rows="6" required></textarea>
+
                 <button type="submit">Wyślij</button>
             </form>
-            <p id="thankyou" style="display:none;">Dziękujemy za zainteresowanie naszą ofertą. Postaramy się skontaktować z Tobą jak najszybciej. Zachęcamy również do kontaktu telefonicznego.</p>
-        </section>
-    </main>
+        </div>
+    </section>
 
     <footer>
         <p>&copy; 2024 Kompleks Handlowy Mazurek</p>
     </footer>
-
-    <script>
-        // Update the date
-        document.getElementById('date').innerText = new Date().toLocaleDateString('pl-PL', {
-            day: '2-digit',
-            month: 'long',
-            year: 'numeric'
-        });
-
-        // Show thank you message after form submission
-        document.querySelector('form').addEventListener('submit', function(event) {
-            event.preventDefault(); // Prevent actual form submission
-            document.getElementById('thankyou').style.display = 'block';
-        });
-    </script>
 </body>
 </html>
