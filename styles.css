@@ -3,12 +3,12 @@ body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
-    background: #f5f5f5; /* Jasne tło */
+    background: #ffffff; /* Jasne tło */
     color: #333;
 }
 
 header {
-    background: #004d40; /* Ciemny kolor z logo */
+    background: #004d40; /* Kolor z logo */
     padding: 20px;
     text-align: center;
     position: relative;
