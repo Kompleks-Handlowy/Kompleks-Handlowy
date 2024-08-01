@@ -7,83 +7,90 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
+    <!-- Nagłówek z logo -->
     <header>
-        <img src="LOGO.png" alt="Kompleks Handlowy Mazurek Logo" class="logo">
+        <img src="LOGO.png" alt="Logo Kompleksu Handlowego Mazurek" id="logo">
+        <h1>Kompleks Handlowy Mazurek</h1>
         <nav>
             <ul>
-                <li><a href="#stacja-paliw">Stacja Paliw</a></li>
-                <li><a href="#wypozyczalnia">Wypożyczalnia Sprzętu Budowlanego</a></li>
-                <li><a href="#uslugi">Usługi</a></li>
-                <li><a href="#skup-zboza">Skup Zboża</a></li>
-                <li><a href="#sklad-materialow">Skład Materiałów Budowlanych</a></li>
-                <li><a href="#onas">O Nas</a></li>
-                <li><a href="#kontakt">Kontakt</a></li>
+                <li><a href="#station">Stacja Paliw</a></li>
+                <li><a href="#equipment">Wypożyczalnia Sprzętu Budowlanego</a></li>
+                <li><a href="#services">Usługi</a></li>
+                <li><a href="#grain">Skup Zboża</a></li>
+                <li><a href="#about">O Nas</a></li>
+                <li><a href="#contact">Kontakt</a></li>
             </ul>
         </nav>
-        <div id="date"></div>
-        <div id="weather-widget"></div>
     </header>
 
-    <section id="stacja-paliw">
+    <!-- Sekcja Stacja Paliw -->
+    <section id="station">
         <h2>Stacja Paliw</h2>
-        <p>Stacje oferują pełną gamę usług od sprzedaży paliwa, przez własny koncept kawiarniano-gastronomiczny Caffe, sklep, aż po myjnie i ofertę kierowaną do klientów biznesowych.</p>
-        <p>Wszystkie stacje działające w ramach sieci spełniają jednolite standardy obsługi i jakości. Gwarancją jakości paliwa na stacjach w barwach jest niezależny program badania paliw.</p>
+        <p>Stacje oferują pełną gamę usług od sprzedaży paliwa, przez własny koncept kawiarniano-gastronomiczny Caffe, sklep, aż po myjnie i ofertę kierowaną do klientów biznesowych. Wszystkie stacje działające w ramach sieci spełniają jednolite standardy obsługi i jakości. Gwarancją jakości paliwa na stacjach w barwach jest niezależny program badania paliw.</p>
     </section>
 
-    <section id="wypozyczalnia">
+    <!-- Sekcja Wypożyczalnia Sprzętu Budowlanego -->
+    <section id="equipment">
         <h2>Wypożyczalnia Sprzętu Budowlanego</h2>
-        <div class="gallery">
-            <img src="WEIDEMANN.png" alt="Weidemann">
-            <img src="kubota.png" alt="Kubota">
-            <img src="manitou.png" alt="Manitou">
-            <img src="iveco.png" alt="Iveco">
+        <div class="carousel">
+            <img src="wideman.png" alt="Wideman" class="carousel-item">
+            <img src="kubota.png" alt="Kubota" class="carousel-item">
+            <img src="iveco.png" alt="Iveco" class="carousel-item">
+            <img src="manitou.png" alt="Manitou" class="carousel-item">
         </div>
     </section>
 
-    <section id="uslugi">
+    <!-- Sekcja Usługi -->
+    <section id="services">
         <h2>Usługi</h2>
-        <div class="truck-animation">
-            <img src="tir.png" alt="Tir" class="truck">
+        <!-- Animowany tira -->
+        <div id="truck">
+            <img src="tir.png" alt="Tir">
         </div>
     </section>
 
-    <section id="skup-zboza">
+    <!-- Sekcja Skup Zboża -->
+    <section id="grain">
         <h2>Skup Zboża</h2>
         <p>Od wielu lat zajmujemy się obrotem zbożami. Doświadczeni pracownicy, pewni odbiorcy i rozsądna polityka finansowa gwarantują bezpieczeństwo zawieranych z nami umów. Przez cały rok prowadzimy skup zbóż i innych płodów rolnych, m.in. pszenicy, kukurydzy czy owsa. Organizujemy sprawne odbiory, dzięki rozbudowanej siatce spedycji. Skontaktuj się z nami i sprawdź, jaką ofertę mamy dla Ciebie!</p>
-        <p>Przez cały rok udzielamy informacji i skupujemy:</p>
+        <p>Przez cały rok udzielamy informacji i skupujemy:
         <ul>
             <li>rzepak,</li>
             <li>zboża - pszenica, żyto, pszenżyto, jęczmień,</li>
             <li>kukurydza,</li>
         </ul>
-        <p>Nasz Zespół jest do Państwa dyspozycji przez cały rok.</p>
+        Nasz Zespół jest do Państwa dyspozycji przez cały rok.</p>
         <img src="SKUP.png" alt="Skup Zboża">
     </section>
 
-    <section id="sklad-materialow">
-        <h2>Skład Materiałów Budowlanych</h2>
+    <!-- Sekcja O Nas -->
+    <section id="about">
+        <h2>O Nas</h2>
+        <p>Informacje o firmie i jej działalności.</p>
+    </section>
+
+    <!-- Sekcja Kontakt -->
+    <section id="contact">
+        <h2>Kontakt</h2>
+        <p>Stacja Paliw Płynnych Jarosław Mazurek</p>
+        <p>NIP: 7140000653</p>
+        <p>REGON: 004183210</p>
+        <p>Adres: Stary Uścimów 107, 21-109 Stary Uścimów</p>
+        <p>Telefony: 691-700-003, 691-800-009</p>
+        <p>Email: <a href="mailto:mazurek38@wp.pl">mazurek38@wp.pl</a></p>
         <img src="Sklad.png" alt="Skład Materiałów Budowlanych">
     </section>
 
-    <section id="kontakt">
-        <h2>Kontakt</h2>
-        <p><strong>Stacja Paliw Płynnych Jarosław Mazurek</strong></p>
-        <p>NIP 7140000653</p>
-        <p>REGON 004183210</p>
-        <p><strong>Adres:</strong><br>
-        Stary Uścimów 107, 21-109 Stary Uścimów</p>
-        <p><strong>Telefony:</strong><br>
-        691-700-003<br>
-        691-800-009</p>
-        <p><strong>Email:</strong><br>
-        mazurek38@wp.pl</p>
-    </section>
+    <!-- Sekcja Pogody i Daty -->
+    <section id="weather"></section>
+    <section id="date"></section>
 
+    <!-- Stopka -->
     <footer>
         <p>&copy; 2024 Kompleks Handlowy Mazurek. Wszystkie prawa zastrzeżone.</p>
     </footer>
 
+    <!-- Wstawienie pliku JavaScript -->
     <script src="script.js"></script>
 </body>
 </html>
