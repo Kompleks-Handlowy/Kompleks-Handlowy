@@ -55,18 +55,6 @@ section {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Animacja tira */
-#truck img {
-    width: 100%;
-    animation: moveTruck 10s linear infinite;
-    transform: rotate(180deg); /* Obrót tira */
-}
-
-@keyframes moveTruck {
-    0% { transform: translateX(100%) rotate(180deg); }
-    100% { transform: translateX(-100%) rotate(180deg); }
-}
-
 /* Carousel */
 .carousel {
     display: flex;
@@ -77,7 +65,28 @@ section {
 .carousel-item {
     width: 100%;
     max-width: 300px;
+    margin: 0 5px;
     transition: transform 0.5s ease;
+}
+
+/* Animacja tira */
+#truck {
+    overflow: hidden;
+    white-space: nowrap;
+    width: 100%;
+    position: relative;
+}
+
+#truck img {
+    width: 200px;
+    height: auto;
+    animation: moveTruck 10s linear infinite;
+    transform: rotate(0deg); /* Obrót tira */
+}
+
+@keyframes moveTruck {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
 }
 
 /* Stopka */
@@ -98,4 +107,13 @@ section img {
 #date, #weather {
     margin-top: 20px;
     text-align: center;
+}
+
+/* Style dla usługi transportowej */
+#services ul {
+    list-style-type: none;
+}
+
+#services li {
+    margin: 10px 0;
 }
