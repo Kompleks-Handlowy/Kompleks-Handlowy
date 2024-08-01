@@ -62,10 +62,23 @@ section img {
     flex: 0 0 auto;
     width: 25%;
     transition: transform 0.5s ease-in-out;
+    animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-20px);
+    }
+    60% {
+        transform: translateY(-10px);
+    }
 }
 
 #truck img {
-    width: 100%;
+    width: 60%; /* Zmniejszone wymiary tira */
     animation: moveTruck 10s linear infinite;
 }
 
@@ -91,11 +104,25 @@ footer {
 
 /* Zmniejszenie grafik w sekcji wypożyczalnia sprzętu */
 #equipment img {
-    max-width: 100px;
+    max-width: 120px;
     height: auto;
+    margin: 0 10px;
+    animation: scaleUp 2s infinite alternate;
 }
 
-/* Dostosowanie animacji tira, aby cały obraz był widoczny */
-#truck img {
-    animation: moveTruck 10s linear infinite;
+@keyframes scaleUp {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.1);
+    }
+}
+
+/* Dodanie efektu przesuwania zdjęć w sekcji wypożyczalnia sprzętu */
+#equipment {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
 }
