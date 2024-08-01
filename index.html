@@ -64,7 +64,7 @@
         <h2>SKUP ZBOŻA</h2>
         <p>Skupujemy zboża na korzystnych warunkach. Skontaktuj się z nami w celu uzyskania więcej informacji.</p>
         <div class="map-container">
-            <iframe src="https://www.google.com/maps/embed/v1/place?q=Zienki+15,+21-230&key=YOUR_API_KEY" allowfullscreen></iframe>
+            <img src="SKUP.png" alt="Skup Zboża" class="map-image">
         </div>
     </section>
 
@@ -78,7 +78,7 @@
         <p>Horyzont Jarosław Wołek<br>WĘDROWNA 12/6, 20-819 LUBLIN<br>NIP 7123080075<br>REGON 061477594</p>
         <p>Telefony:<br>Jarosław: 730 002 532<br>Paweł: 720 835 638</p>
         <div class="map-container">
-            <iframe src="https://www.google.com/maps/embed/v1/place?q=Stary+U%C5%9Bcim%C3%B3w+107,+21-109+U%C5%9Bcim%C3%B3w&key=YOUR_API_KEY" allowfullscreen></iframe>
+            <img src="Sklad.png" alt="Stary Uścimów" class="map-image">
         </div>
         <form action="https://formspree.io/f/your-form-id" method="POST">
             <label for="name">Imię:</label>
@@ -104,17 +104,17 @@
 
     <script>
         // Data aktualna
-        const dateElement = document.getElementById('current-date');
-        if (dateElement) {
-            const today = new Date();
-            const formattedDate = today.toLocaleDateString('pl-PL', {
-                weekday: 'long',
-                year: 'numeric',
-                month: 'long',
-                day: 'numeric'
-            });
-            dateElement.textContent = `Dziś jest ${formattedDate}`;
-        }
+        const dateElement = document.createElement('div');
+        dateElement.id = 'current-date';
+        document.body.insertBefore(dateElement, document.body.firstChild);
+        const today = new Date();
+        const formattedDate = today.toLocaleDateString('pl-PL', {
+            weekday: 'long',
+            year: 'numeric',
+            month: 'long',
+            day: 'numeric'
+        });
+        dateElement.textContent = `Dziś jest ${formattedDate}`;
 
         // Pokazanie wiadomości po wysłaniu formularza
         const form = document.querySelector('form');
@@ -125,7 +125,6 @@
                 body: new FormData(form)
             })
             .then(response => response.ok ? document.getElementById('thank-you-message').style.display = 'block' : null)
-            .catch(error => console.error('Error:', error));
         });
     </script>
 </body>
