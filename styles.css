@@ -9,8 +9,9 @@ body, h1, h2, h3, p, ul, li, form, input, textarea, button {
 body {
     font-family: 'Roboto', sans-serif;
     color: #333;
-    background-color: #f4f4f4;
+    background-color: #dcdcdc; /* Jasnoszare tło */
     line-height: 1.6;
+    font-size: 18px; /* Powiększenie czcionki */
 }
 
 header {
@@ -25,15 +26,8 @@ header {
 }
 
 .logo {
-    max-width: 250px;
+    max-width: 300px; /* Powiększenie logo */
     height: auto;
-    animation: logoAnimation 2s infinite;
-}
-
-@keyframes logoAnimation {
-    0% { transform: scale(1); }
-    50% { transform: scale(1.05); }
-    100% { transform: scale(1); }
 }
 
 nav ul {
@@ -43,19 +37,13 @@ nav ul {
 
 nav ul li {
     display: inline;
-    margin: 0 10px;
+    margin-right: 1rem;
 }
 
 nav ul li a {
     color: #fff;
     text-decoration: none;
-    font-weight: bold;
     position: relative;
-    padding: 5px;
-}
-
-nav ul li a:hover {
-    text-decoration: underline;
 }
 
 nav ul li a::after {
@@ -96,7 +84,7 @@ h2 {
 }
 
 .rental-image {
-    width: 200px;
+    width: 250px; /* Zwiększenie obrazów */
     height: auto;
     border: 2px solid #333;
     border-radius: 8px;
@@ -132,17 +120,17 @@ form label {
 }
 
 form input, form textarea {
-    padding: 8px;
+    padding: 12px; /* Powiększenie pola formularza */
     border: 1px solid #ddd;
     border-radius: 4px;
 }
 
 form button {
-    padding: 10px;
+    padding: 12px;
     border: none;
     background-color: #333;
     color: #fff;
-    font-size: 16px;
+    font-size: 18px; /* Powiększenie czcionki przycisku */
     cursor: pointer;
     border-radius: 4px;
     transition: background-color 0.3s;
@@ -163,8 +151,18 @@ footer {
 }
 
 #current-date {
-    font-size: 16px;
+    font-size: 18px; /* Powiększenie czcionki daty */
     text-align: center;
     margin-top: 1rem;
     color: #555;
+}
+
+@media (max-width: 768px) {
+    .rental-gallery {
+        flex-direction: column;
+    }
+
+    .rental-item {
+        margin-bottom: 1rem;
+    }
 }
