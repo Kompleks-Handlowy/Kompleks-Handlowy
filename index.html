@@ -5,55 +5,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kompleks Handlowy Mazurek</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 <body>
+
     <header>
-        <div class="logo-container">
-            <img src="LOGO.png" alt="Kompleks Handlowy Mazurek Logo" class="logo">
-        </div>
+        <img src="LOGO.png" alt="Kompleks Handlowy Mazurek Logo" class="logo">
         <nav>
             <ul>
-                <li><a href="#station">STACJA PALIW</a></li>
-                <li><a href="#rental">WYPOŻYCZALNIA SPRZĘTU BUDOWLANEGO</a></li>
-                <li><a href="#services">USŁUGI</a></li>
-                <li><a href="#grain">SKUP ZBOŻA</a></li>
-                <li><a href="#materials">SKŁAD MATERIAŁÓW BUDOWLANYCH</a></li>
-                <li><a href="#about">O NAS</a></li>
-                <li><a href="#contact">KONTAKT</a></li>
+                <li><a href="#stacja-paliw">Stacja Paliw</a></li>
+                <li><a href="#wypozyczalnia">Wypożyczalnia Sprzętu Budowlanego</a></li>
+                <li><a href="#uslugi">Usługi</a></li>
+                <li><a href="#skup-zboza">Skup Zboża</a></li>
+                <li><a href="#sklad-materialow">Skład Materiałów Budowlanych</a></li>
+                <li><a href="#onas">O Nas</a></li>
+                <li><a href="#kontakt">Kontakt</a></li>
             </ul>
         </nav>
+        <div id="date"></div>
+        <div id="weather-widget"></div>
     </header>
 
-    <section id="station">
-        <h2>STACJA PALIW</h2>
+    <section id="stacja-paliw">
+        <h2>Stacja Paliw</h2>
         <p>Stacje oferują pełną gamę usług od sprzedaży paliwa, przez własny koncept kawiarniano-gastronomiczny Caffe, sklep, aż po myjnie i ofertę kierowaną do klientów biznesowych.</p>
         <p>Wszystkie stacje działające w ramach sieci spełniają jednolite standardy obsługi i jakości. Gwarancją jakości paliwa na stacjach w barwach jest niezależny program badania paliw.</p>
     </section>
 
-    <section id="rental">
-        <h2>WYPOŻYCZALNIA SPRZĘTU BUDOWLANEGO</h2>
-        <p>Oferujemy wynajem sprzętu budowlanego, w tym minikoparek, ładowarek teleskopowych i przegubowych, oraz prace ziemne i ogólnobudowlane. Zapewniamy transport materiałów budowlanych z rozładunkiem HDS.</p>
-        <div class="rental-gallery">
-            <img src="WEIDEMANN.png" alt="Weidemann" class="rental-image">
-            <img src="kubota.png" alt="Kubota" class="rental-image">
-            <img src="iveco.png" alt="Iveco" class="rental-image">
-            <img src="manitou.png" alt="Manitou" class="rental-image">
+    <section id="wypozyczalnia">
+        <h2>Wypożyczalnia Sprzętu Budowlanego</h2>
+        <div class="gallery">
+            <img src="WEIDEMANN.png" alt="Weidemann">
+            <img src="kubota.png" alt="Kubota">
+            <img src="manitou.png" alt="Manitou">
+            <img src="iveco.png" alt="Iveco">
         </div>
     </section>
 
-    <section id="services">
-        <h2>USŁUGI</h2>
-        <p>Oferujemy usługi związane z pracami ziemnymi, budowlanymi oraz transportem materiałów budowlanych.</p>
+    <section id="uslugi">
+        <h2>Usługi</h2>
         <div class="truck-animation">
             <img src="tir.png" alt="Tir" class="truck">
         </div>
     </section>
 
-    <section id="grain">
-        <h2>SKUP ZBOŻA</h2>
+    <section id="skup-zboza">
+        <h2>Skup Zboża</h2>
         <p>Od wielu lat zajmujemy się obrotem zbożami. Doświadczeni pracownicy, pewni odbiorcy i rozsądna polityka finansowa gwarantują bezpieczeństwo zawieranych z nami umów. Przez cały rok prowadzimy skup zbóż i innych płodów rolnych, m.in. pszenicy, kukurydzy czy owsa. Organizujemy sprawne odbiory, dzięki rozbudowanej siatce spedycji. Skontaktuj się z nami i sprawdź, jaką ofertę mamy dla Ciebie!</p>
         <p>Przez cały rok udzielamy informacji i skupujemy:</p>
         <ul>
@@ -62,79 +58,32 @@
             <li>kukurydza,</li>
         </ul>
         <p>Nasz Zespół jest do Państwa dyspozycji przez cały rok.</p>
-        <div class="map-container">
-            <img src="SKUP.png" alt="Skup Zboża" class="map-image">
-        </div>
+        <img src="SKUP.png" alt="Skup Zboża">
     </section>
 
-    <section id="materials">
-        <h2>SKŁAD MATERIAŁÓW BUDOWLANYCH</h2>
-        <p>Skład materiałów budowlanych oferuje szeroki asortyment produktów do budowy i remontów. Od fundamentów po wykończenia – u nas znajdziesz wszystko, czego potrzebujesz.</p>
-        <div class="map-container">
-            <img src="Sklad.png" alt="Skład Materiałów Budowlanych" class="map-image">
-        </div>
+    <section id="sklad-materialow">
+        <h2>Skład Materiałów Budowlanych</h2>
+        <img src="Sklad.png" alt="Skład Materiałów Budowlanych">
     </section>
 
-    <section id="about">
-        <h2>O NAS</h2>
-        <p>Kompleks Handlowy Mazurek zapewnia kompleksową obsługę w zakresie paliw, wynajmu sprzętu budowlanego oraz skupu zboża. Nasze usługi są dostosowane do potrzeb klientów indywidualnych i biznesowych.</p>
-    </section>
-
-    <section id="contact">
-        <h2>KONTAKT</h2>
-        <p>Stacja Paliw Płynnych<br>NIP 7140000653<br>REGON 004183210</p>
-        <p>Adresy:<br>Kompleks Handlowy Mazurek - Stacja Paliw<br>Skład Materiałów Budowlanych Stary Uścimów 107, 21-109 Stary Uścimów<br>Stacja Paliw Dębowa Kłoda 120, 21-211 Dębowa Kłoda</p>
-        <p>Telefony:<br>691-700-003<br>691-800-009</p>
-        <p>Email:<br>mazurek38@wp.pl</p>
-        <div class="map-container">
-            <img src="contact-map.png" alt="Mapa Kontakt" class="map-image">
-        </div>
-        <form action="https://formspree.io/f/your-form-id" method="POST">
-            <label for="name">Imię:</label>
-            <input type="text" id="name" name="name" required>
-            
-            <label for="email">E-mail:</label>
-            <input type="email" id="email" name="email" required>
-            
-            <label for="phone">Numer telefonu:</label>
-            <input type="text" id="phone" name="phone" required>
-            
-            <label for="message">Treść wiadomości:</label>
-            <textarea id="message" name="message" rows="4" required></textarea>
-            
-            <button type="submit">Wyślij</button>
-        </form>
-        <p id="thank-you-message" style="display:none;">Dziękujemy za zainteresowanie naszą ofertą. Postaramy się skontaktować z Tobą jak najszybciej. Zachęcamy również do kontaktu telefonicznego.</p>
+    <section id="kontakt">
+        <h2>Kontakt</h2>
+        <p><strong>Stacja Paliw Płynnych Jarosław Mazurek</strong></p>
+        <p>NIP 7140000653</p>
+        <p>REGON 004183210</p>
+        <p><strong>Adres:</strong><br>
+        Stary Uścimów 107, 21-109 Stary Uścimów</p>
+        <p><strong>Telefony:</strong><br>
+        691-700-003<br>
+        691-800-009</p>
+        <p><strong>Email:</strong><br>
+        mazurek38@wp.pl</p>
     </section>
 
     <footer>
         <p>&copy; 2024 Kompleks Handlowy Mazurek. Wszystkie prawa zastrzeżone.</p>
     </footer>
 
-    <script>
-        // Data aktualna
-        const dateElement = document.createElement('div');
-        dateElement.id = 'current-date';
-        document.body.insertBefore(dateElement, document.body.firstChild);
-        const today = new Date();
-        const formattedDate = today.toLocaleDateString('pl-PL', {
-            weekday: 'long',
-            year: 'numeric',
-            month: 'long',
-            day: 'numeric'
-        });
-        dateElement.textContent = `Dziś jest ${formattedDate}`;
-
-        // Pokazanie wiadomości po wysłaniu formularza
-        const form = document.querySelector('form');
-        form.addEventListener('submit', (event) => {
-            event.preventDefault();
-            fetch(form.action, {
-                method: 'POST',
-                body: new FormData(form)
-            })
-            .then(response => response.ok ? document.getElementById('thank-you-message').style.display = 'block' : null)
-        });
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
