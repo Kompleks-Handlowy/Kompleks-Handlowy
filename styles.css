@@ -1,90 +1,235 @@
+/* Ogólne style */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background: #e0f2f1; /* Delikatna zieleń */
+    color: #004d40;
 }
 
 header {
-    background-color: #333;
-    color: white;
-    padding: 10px 0;
+    background: #b2dfdb; /* Delikatna zieleń */
+    padding: 20px;
     text-align: center;
+    position: relative;
 }
 
 .logo-container {
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 .logo {
-    width: 200px;
-}
-
-.date {
-    font-size: 1.2em;
-    font-weight: bold;
-    margin-top: 10px;
+    width: 200px; /* Rozmiar logo dostosowany */
 }
 
 nav ul {
     list-style: none;
     padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
 }
 
 nav ul li {
-    display: inline;
-    margin: 0 10px;
+    margin: 0 15px;
 }
 
 nav ul li a {
-    color: white;
     text-decoration: none;
+    color: #00796b;
     font-weight: bold;
+    font-size: 1.2em;
+}
+
+.hero-text {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.hero-text h1 {
+    font-family: 'Baloo 2', cursive;
+    font-size: 3em;
+    margin: 0;
+}
+
+.hero-text p {
+    font-size: 1.5em;
+}
+
+.quick-contact {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.quick-contact p {
+    margin: 5px 0;
+}
+
+.qr-code {
+    display: flex;
+    justify-content: center;
+}
+
+.qr-code img {
+    width: 150px;
+    height: 150px;
+}
+
+.kite img {
+    width: 100px;
+    height: auto;
+    position: absolute;
+    animation: kiteMove 10s linear infinite;
+    bottom: 0;
+    left: 10%;
+}
+
+@keyframes kiteMove {
+    0% { transform: translateX(-100px); }
+    100% { transform: translateX(100vw); }
 }
 
 section {
-    padding: 20px;
+    padding: 40px 20px;
     text-align: center;
+}
+
+section h2 {
+    font-family: 'Baloo 2', cursive;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.offer-item {
+    background-color: #ffffff;
+    border: 1px solid #00796b;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px auto;
+    width: 80%;
+    max-width: 600px;
+    text-align: center;
+}
+
+.offer-title {
+    font-family: 'Baloo 2', cursive;
+    font-size: 2em;
+    margin-top: 0;
+}
+
+.offer-details, .offer-pricing {
+    font-size: 1.1em;
+}
+
+.offer-item img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.contact-info {
+    background: #ffffff;
+    border: 1px solid #00796b;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px auto;
+    width: 80%;
+    max-width: 600px;
+    text-align: left;
 }
 
 form {
     display: flex;
     flex-direction: column;
     align-items: center;
-    max-width: 600px;
-    margin: 0 auto;
+    margin-top: 20px;
 }
 
 form label {
     margin: 10px 0 5px;
+    font-weight: bold;
 }
 
-form input,
-form textarea {
+form input, form textarea {
     width: 100%;
-    max-width: 400px;
-    padding: 8px;
+    max-width: 500px;
+    padding: 10px;
     margin-bottom: 10px;
-    border: 1px solid #ccc;
+    border: 1px solid #00796b;
     border-radius: 4px;
 }
 
 form button {
-    padding: 10px 20px;
-    background-color: #333;
+    background-color: #00796b;
     color: white;
     border: none;
+    padding: 10px 20px;
     border-radius: 4px;
     cursor: pointer;
+    font-size: 1em;
 }
 
 form button:hover {
-    background-color: #555;
+    background-color: #004d40;
 }
 
 footer {
-    background-color: #333;
+    background-color: #004d40;
     color: white;
     text-align: center;
     padding: 10px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Animacje */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.date {
+    font-size: 1.2em;
+    margin: 20px 0;
+    text-align: center;
+}
+
+/* Stylizacja sekcji */
+.category-section {
+    padding: 40px 20px;
+    background: #b2dfdb;
+    color: #004d40;
+}
+
+.category-section h2 {
+    font-family: 'Baloo 2', cursive;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.category-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.category-item {
+    background: #ffffff;
+    border: 1px solid #00796b;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    width: 200px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.category-item h3 {
+    margin: 0;
+    font-family: 'Baloo 2', cursive;
+}
+
+.category-item p {
+    font-size: 1em;
+    margin: 10px 0;
 }
