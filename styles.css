@@ -20,7 +20,7 @@ header {
 }
 
 .logo {
-    width: 200px; /* Logo */
+    width: 200px; /* Zmienione w zależności od wymagań */
 }
 
 nav ul {
@@ -54,6 +54,21 @@ nav ul li a {
 
 .hero-text p {
     font-size: 1.5em;
+}
+
+.current-date {
+    text-align: center;
+    padding: 10px;
+    background: #ffffff;
+    border: 1px solid #ccc;
+    margin: 20px auto;
+    width: 80%;
+    max-width: 800px;
+}
+
+.current-date p {
+    font-size: 1.2em;
+    margin: 0;
 }
 
 .contact-info, .contact-details {
@@ -122,20 +137,30 @@ form input, form textarea {
 form button {
     margin-top: 10px;
     padding: 10px 20px;
-    background-color: #004d40;
-    color: white;
+    background: #004d40;
+    color: #fff;
     border: none;
     border-radius: 5px;
     cursor: pointer;
 }
 
 form button:hover {
-    background-color: #003d33;
+    background: #003d33;
+}
+
+#thank-you-message {
+    text-align: center;
+    padding: 10px;
+    background: #e0f2f1;
+    border: 1px solid #004d40;
+    margin: 20px auto;
+    width: 80%;
+    max-width: 800px;
 }
 
 footer {
     background: #004d40;
-    color: white;
+    color: #fff;
     padding: 10px;
     text-align: center;
 }
