@@ -1,5 +1,5 @@
 /* Resetowanie stylów domyślnych */
-body, h1, h2, p, ul {
+body, h1, h2, h3, p, ul {
     margin: 0;
     padding: 0;
 }
@@ -7,7 +7,7 @@ body, h1, h2, p, ul {
 /* Ogólne style strony */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f0f0f0; /* Jasnoszare tło */
+    background-color: #e0e0e0; /* Jasnoszare tło */
     color: #333;
     line-height: 1.6;
     font-size: 18px; /* Powiększona czcionka */
@@ -45,7 +45,7 @@ header nav a {
     position: absolute;
     top: 10px;
     right: 20px;
-    font-size: 18px;
+    font-size: 16px;
     color: #fff;
 }
 
@@ -53,6 +53,11 @@ section {
     padding: 20px;
     margin: 10px;
     background: #fff;
+}
+
+section h2 {
+    text-align: center; /* Wyśrodkowanie nagłówków sekcji */
+    margin-bottom: 15px; /* Dodanie odstępu poniżej nagłówka */
 }
 
 section img {
@@ -124,4 +129,32 @@ footer {
 
 #equipment-images img:nth-child(4) {
     animation: animateEquipment 6s infinite;
+}
+
+/* Styl dla przydatnych linków w sekcji Skup Zboża */
+.useful-links {
+    margin-top: 20px;
+}
+
+.useful-links h3 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.useful-links ul {
+    list-style: none;
+    text-align: center;
+}
+
+.useful-links ul li {
+    margin-bottom: 5px;
+}
+
+.useful-links a {
+    color: #1a73e8;
+    text-decoration: none;
+}
+
+.useful-links a:hover {
+    text-decoration: underline;
 }
